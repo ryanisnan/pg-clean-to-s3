@@ -1,7 +1,7 @@
 #Description#
 
 #Requirements#
-This project makes use of AWS CLI tools.
+- AWS CLI tools
 
 #Installation & Configuration#
 
