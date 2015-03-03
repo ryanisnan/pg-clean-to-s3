@@ -1,3 +1,3 @@
-./db_fetch.sh
-./db_prune.sh
-./db_upload.sh
+./src/db_fetch.sh
+./src/db_prune.sh
+./src/db_upload.sh

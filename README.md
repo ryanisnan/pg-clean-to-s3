@@ -8,6 +8,11 @@
 ##Get the app##
 `git clone https://github.com/ryanisnan/pg-clean-to-s3.git`
 
+##Implement db_prune.sh##
+Using simple PSQL commands, implement whatever pruning instructions you require. Some examples are, changing all user passwords to "1234". This step is entirely project dependent, and is left up to you to implement.
+
+Note the script path, as you will use it in the next step.
+
 ##Configure your environment variables##
     
     AWS_ACCESS_KEY="my_access_key"
@@ -17,9 +22,7 @@
     REMOTE_DB_PORT=1234
     REMOTE_DB_NAME="my_database"
     REMOTE_DB_USER="my_database_user"
-
-##Implement db_prune.sh##
-Using simple PSQL commands, implement whatever pruning instructions you require. Some examples are, changing all user passwords to "1234". This step is entirely project dependent, and is left up to you to implement.
+    PRUNE_SCRIPT=path/to/script.sh
 
 #Run it#
-`./fetch_copy.sh`
+`./run.sh`
