@@ -1,3 +1,5 @@
+chmod +x ./src/*.sh
+
 ./src/db_download.sh
 ./src/db_restore.sh
 ./src/db_prune.sh
