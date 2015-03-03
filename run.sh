@@ -6,3 +6,5 @@ chmod +x ./src/*.sh
 ./src/db_dump.sh
 ./src/db_upload.sh
 ./src/cleanup.sh
+
+echo "Done."
