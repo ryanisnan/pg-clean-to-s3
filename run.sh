@@ -6,19 +6,7 @@ if [ $? -ne 0 ]
         exit
 fi
 
-./src/db_restore.sh
-if [ $? -ne 0 ]
-    then
-        exit
-fi
-
 ./src/db_prune.sh
-if [ $? -ne 0 ]
-    then
-        exit
-fi
-
-./src/db_dump.sh
 if [ $? -ne 0 ]
     then
         exit
