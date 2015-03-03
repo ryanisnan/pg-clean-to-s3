@@ -14,7 +14,7 @@
     AWS_SECRET_KEY="my_secret_key"
     AWS_S3_BUCKET_NAME="my_s3_export_bucket_name"
     REMOTE_DB_HOST="domain-to-my-db.amazonaws.com"
-    REMOTE_DB_PORT=5472
+    REMOTE_DB_PORT=1234
     REMOTE_DB_NAME="my_database"
     REMOTE_DB_USER="my_database_user"
 
