@@ -8,6 +8,7 @@ if [ $? -ne 0 ]
         exit
 fi
 
+sudo su postgres
 echo "Creating a new database locally..."
 psql -c "DROP DATABASE IF EXISTS local_prune;"
 psql -c "CREATE DATABASE local_prune;"
