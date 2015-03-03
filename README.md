@@ -2,6 +2,7 @@
 
 #Requirements#
 - AWS CLI tools
+- A running local postgres server
 
 #Installation & Configuration#
 
