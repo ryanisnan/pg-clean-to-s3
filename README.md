@@ -26,4 +26,5 @@ Note the script path, as you will use it in the next step.
     PRUNE_SCRIPT=path/to/script.sh
 
 #Run it#
-`./run.sh`
+`chmod +x pg-clean-to-s3/run.sh`
+`./pg-clean-to-s3/run.sh`
