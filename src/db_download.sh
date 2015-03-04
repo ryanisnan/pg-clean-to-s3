@@ -13,4 +13,4 @@ psql -U $LOCAL_DB_USER -c "DROP DATABASE IF EXISTS $LOCAL_DB_NAME;"
 psql -U $LOCAL_DB_USER -c "CREATE DATABASE $LOCAL_DB_NAME;"
 
 echo "Restoring data locally..."
-pg_restore --clean --no-acl --no-owner -j 2 -h localhost -U $LOCAL_DB_USER -d $LOCAL_DB_NAME ../latest.dump
+pg_restore --no-owner -h localhost -U $LOCAL_DB_USER -d $LOCAL_DB_NAME ../latest.dump
