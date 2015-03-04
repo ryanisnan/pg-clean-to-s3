@@ -8,10 +8,9 @@ if [ $? -ne 0 ]
         exit
 fi
 
-sudo su $LOCAL_DB_USER
 echo "Creating a new database locally..."
-psql -c "DROP DATABASE IF EXISTS $LOCAL_DB_NAME;"
-psql -c "CREATE DATABASE $LOCAL_DB_NAME;"
+psql -U $LOCAL_DB_USER -c "DROP DATABASE IF EXISTS $LOCAL_DB_NAME;"
+psql -U $LOCAL_DB_USER -c "CREATE DATABASE $LOCAL_DB_NAME;"
 
 echo "Restoring data locally..."
 pg_restore --clean --no-acl --no-owner -j 2 -h localhost -U $LOCAL_DB_USER -d $LOCAL_DB_NAME ../latest.dump
