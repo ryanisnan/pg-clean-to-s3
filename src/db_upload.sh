@@ -1,7 +1,7 @@
 #! /bin/sh
 
 echo "Preparing local database as latest_new.dump"
-pg_dump -Fc local_prune > ../latest_new.dump
+pg_dump -Fc $LOCAL_DB_NAME > ../latest_new.dump
 
 if [ $? -ne 0 ]
     then

@@ -23,6 +23,8 @@ Note the script path, as you will use it in the next step.
     REMOTE_DB_PORT=1234
     REMOTE_DB_NAME="my_database"
     REMOTE_DB_USER="my_database_user"
+    LOCAL_DB_USER="postgres"
+    LOCAL_DB_NAME="tmp_db"
     PRUNE_SCRIPT=path/to/script.sh
 
 #Run it#
