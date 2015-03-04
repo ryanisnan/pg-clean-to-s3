@@ -19,5 +19,3 @@ if [ $? -ne 0 ]
 fi
 
 ./src/cleanup.sh
-
-echo "Done."
