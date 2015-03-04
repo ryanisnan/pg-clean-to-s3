@@ -6,7 +6,7 @@ To automate this, simply run this script on a cron, so that your team consistent
 #Requirements#
 - AWS CLI tools
 - A running local postgres server
-- Access to PSQL as the user defined in the $LOCAL_DB_USER env variable
+- Access to `psql` as the user defined in the `$LOCAL_DB_USER` env variable
 
 #Installation & Configuration#
 
