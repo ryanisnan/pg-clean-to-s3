@@ -12,4 +12,4 @@ if [ $? -ne 0 ]
 fi
 
 echo "Uploading file to S3..."
-aws s3 mv ../latest.dump s3://$AWS_S3_BUCKET_NAME/$output_file
+aws s3 mv ../$output_file s3://$AWS_S3_BUCKET_NAME/$output_file
