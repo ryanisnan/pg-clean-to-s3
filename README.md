@@ -1,5 +1,5 @@
 #Description#
-This project tries to make it easier to fetch developer-ready copies of your production database, with a hook in place for you to define what "developer-ready" means. Maybe you want to remove 99% of users from the system to make the copy of the database lighter? Maybe you want to remove all sensitive user data? Maybe both?
+This app creates a copy of a remote database, runs some kind of script (provided by you) that manipulates the database in some way (possibly removing sensitive user information?), and uploads a copy to S3.
 
 To automate this, simply run this script on a cron, so that your team consistently has access to a fresh, safe copy of your production database.
 
@@ -13,10 +13,8 @@ To automate this, simply run this script on a cron, so that your team consistent
 ##Get the app##
 `git clone https://github.com/ryanisnan/pg-clean-to-s3.git`
 
-##Implement db_prune.sh##
-Using simple PSQL commands, implement whatever pruning instructions you require. Some examples are, changing all user passwords to "1234". This step is entirely project dependent, and is left up to you to implement.
-
-Note the script path, as you will use it in the next step.
+##Implement a cleanup script, and make it referenced by $PRUNE_SCRIPT##
+Do whatever you want here. Go nuts. Every project is different, and every database needs tweaking in its own specific ways.
 
 ##Configure your environment variables##
 
