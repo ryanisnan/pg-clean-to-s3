@@ -1,8 +1,10 @@
-chmod +x ./src/*.sh
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-./src/db_download.sh
+chmod +x $DIR/src/*.sh
 
-./src/db_prune.sh
+$DIR/src/db_download.sh
+
+$DIR/src/db_prune.sh
 if [ $? -ne 0 ]
     then
         exit
